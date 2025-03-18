@@ -32,7 +32,15 @@ export default function RootLayout({ children }) {
         >
           {/* header */}
           <main className="min-h-screen">{children}</main>
+
           {/* footer */}
+          <footer className="bg-muted/50 py-12">
+            <div className="container mx-auto px-4 text-center text-gray-200">
+              <p>
+                Made with ❤ by Kanishka.
+              </p>
+            </div>
+          </footer>
           
         </ThemeProvider>
       </body>
