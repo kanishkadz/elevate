@@ -3,7 +3,7 @@ import { SignedOut, SignInButton, SignUpButton, SignedIn, UserButton } from '@cl
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ChevronDown, FileText, LayoutDashboard, StarsIcon } from 'lucide-react';
+import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 
 
@@ -34,16 +34,26 @@ const Header = () => {
                                 <span className="hidden md:block"> Growth Tools </span>
                                 <ChevronDown className="h-4 w-4" />
                             </Button>
-
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <Link href={'/resume'} className="flex items-center gap-2">
-                                <FileText className="h-4 w-4" />
-                                <span> Build Resume </span>
-                            </Link>
-                            <DropdownMenuItem>Profile</DropdownMenuItem>
-                            <DropdownMenuItem>Billing</DropdownMenuItem>
-                            <DropdownMenuItem>Team</DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href={"/resume"} className="flex items-center gap-2">
+                                    <FileText className="h-4 w-4" />
+                                    <span> Build Resume </span>
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href={'/resume'} className="flex items-center gap-2">
+                                    <PenBox className="h-4 w-4" />
+                                    <span> Cover Letter </span>
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href={'/resume'} className="flex items-center gap-2">
+                                    <GraduationCap className="h-4 w-4" />
+                                    <span> Interview Prep </span>
+                                </Link>
+                            </DropdownMenuItem>
                             <DropdownMenuItem>Subscription</DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
