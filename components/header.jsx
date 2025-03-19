@@ -8,7 +8,7 @@ import { LayoutDashboard } from 'lucide-react';
 
 const Header = () => {
     return (
-        <header>
+        <header className="fixed top-0 w-full border-b bg-background"> 
             <nav>
                 <Link href="/">
                     <Image src="/logo.png" alt="Elevate Logo" width={200} height={60} 
