@@ -1,8 +1,8 @@
 import React from 'react'
 
-const AuthLayout = ({chil}) => {
+const AuthLayout = ({children}) => {
   return (
-    <div>AuthLayout</div>
+    <div>{children}</div>
   )
 }
 
