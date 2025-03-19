@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="flex items-center space-x-2 md:space-x-4">
                     <SignedIn>
                         <Link href={"/dashboard"}>
-                            <Button>
+                            <Button variant="outline"> 
                                 <LayoutDashboard className="h-4 w-4" />
                                 <span className="hidden md:block"> Industry Insights </span>
                             </Button>
@@ -58,17 +58,19 @@ const Header = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
 
+
+
+                    <SignedOut>
+                        <SignInButton>
+                            <Button>Sign In</Button>
+                        </SignInButton>
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
+
                 </div>
             </nav>
-
-
-            <SignedOut>
-                <SignInButton />
-                <SignUpButton />
-            </SignedOut>
-            <SignedIn>
-                <UserButton />
-            </SignedIn>
         </header>
     )
 }
