@@ -37,7 +37,7 @@ const Header = () => {
 
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <Link>
+                            <Link href={'/resume'} className="flex items-center gap-2">
                                 <FileText className="h-4 w-4" />
                                 <span> Build Resume </span>
                             </Link>
