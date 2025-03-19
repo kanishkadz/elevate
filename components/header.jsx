@@ -8,8 +8,10 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <Link href='/'>
-                    <Image src='/logo.png' />
+                <Link href="/">
+                    <Image src="/logo.png" alt="Elevate Logo" width={200} height={60} 
+                        className="h-12 py-1 w-auto object-contain"
+                    />
                 </Link>
             </nav>
 
