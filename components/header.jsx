@@ -2,6 +2,8 @@ import React from 'react'
 import { SignedOut, SignInButton, SignUpButton, SignedIn, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Button } from './ui/button';
+import { LayoutDashboard } from 'lucide-react';
 
 
 const Header = () => {
@@ -13,6 +15,17 @@ const Header = () => {
                         className="h-12 py-1 w-auto object-contain"
                     />
                 </Link>
+
+                <div>
+                    <SignedIn>
+                        <Link href={"/dashboard"}>
+                            <Button>
+                                <LayoutDashboard className="h-4 w-4" />
+                                Industry Insights
+                            </Button>
+                        </Link>
+                    </SignedIn>
+                </div>
             </nav>
 
 
