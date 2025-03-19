@@ -3,7 +3,7 @@ import { SignedOut, SignInButton, SignUpButton, SignedIn, UserButton } from '@cl
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { LayoutDashboard } from 'lucide-react';
+import { ChevronDown, LayoutDashboard, StarsIcon } from 'lucide-react';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 
 
@@ -17,7 +17,7 @@ const Header = () => {
                     />
                 </Link>
 
-                <div>
+                <div className="flex items-center space-x-2 md:space-x-4">
                     <SignedIn>
                         <Link href={"/dashboard"}>
                             <Button>
@@ -28,10 +28,15 @@ const Header = () => {
                     </SignedIn>
 
                     <DropdownMenu>
-                        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+                        <DropdownMenuTrigger asChild>
+                            <Button>
+                                <StarsIcon className="h-4 w-4" />
+                                <span className="hidden md:block"> Growth Tools </span>
+                                <ChevronDown className="h-4 w-4" />
+                            </Button>
+
+                        </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                            <DropdownMenuSeparator />
                             <DropdownMenuItem>Profile</DropdownMenuItem>
                             <DropdownMenuItem>Billing</DropdownMenuItem>
                             <DropdownMenuItem>Team</DropdownMenuItem>
