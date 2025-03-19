@@ -21,7 +21,7 @@ const Header = () => {
                         <Link href={"/dashboard"}>
                             <Button>
                                 <LayoutDashboard className="h-4 w-4" />
-                                Industry Insights
+                                <span className="hidden md:block"> Industry Insights </span>
                             </Button>
                         </Link>
                     </SignedIn>
