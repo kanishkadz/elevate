@@ -3,7 +3,7 @@ import { SignedOut, SignInButton, SignUpButton, SignedIn, UserButton } from '@cl
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ChevronDown, LayoutDashboard, StarsIcon } from 'lucide-react';
+import { ChevronDown, FileText, LayoutDashboard, StarsIcon } from 'lucide-react';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 
 
@@ -37,6 +37,10 @@ const Header = () => {
 
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
+                            <Link>
+                                <FileText className="h-4 w-4" />
+                                <span> Build Resume </span>
+                            </Link>
                             <DropdownMenuItem>Profile</DropdownMenuItem>
                             <DropdownMenuItem>Billing</DropdownMenuItem>
                             <DropdownMenuItem>Team</DropdownMenuItem>
