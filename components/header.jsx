@@ -20,49 +20,50 @@ const Header = () => {
                 <div className="flex items-center space-x-2 md:space-x-4">
                     <SignedIn>
                         <Link href={"/dashboard"}>
-                            <Button variant="outline"> 
+                            <Button variant="outline">
                                 <LayoutDashboard className="h-4 w-4" />
                                 <span className="hidden md:block"> Industry Insights </span>
                             </Button>
                         </Link>
-                    </SignedIn>
 
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                            <Button>
-                                <StarsIcon className="h-4 w-4" />
-                                <span className="hidden md:block"> Growth Tools </span>
-                                <ChevronDown className="h-4 w-4" />
-                            </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent>
-                            <DropdownMenuItem>
-                                <Link href={"/resume"} className="flex items-center gap-2">
-                                    <FileText className="h-4 w-4" />
-                                    <span> Build Resume </span>
-                                </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                <Link href={"/ai-cover-letter"} className="flex items-center gap-2">
-                                    <PenBox className="h-4 w-4" />
-                                    <span> Cover Letter </span>
-                                </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                <Link href={"interview"} className="flex items-center gap-2">
-                                    <GraduationCap className="h-4 w-4" />
-                                    <span> Interview Prep </span>
-                                </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>Subscription</DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
+
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <Button>
+                                    <StarsIcon className="h-4 w-4" />
+                                    <span className="hidden md:block"> Growth Tools </span>
+                                    <ChevronDown className="h-4 w-4" />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent>
+                                <DropdownMenuItem>
+                                    <Link href={"/resume"} className="flex items-center gap-2">
+                                        <FileText className="h-4 w-4" />
+                                        <span> Build Resume </span>
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <Link href={"/ai-cover-letter"} className="flex items-center gap-2">
+                                        <PenBox className="h-4 w-4" />
+                                        <span> Cover Letter </span>
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <Link href={"interview"} className="flex items-center gap-2">
+                                        <GraduationCap className="h-4 w-4" />
+                                        <span> Interview Prep </span>
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem>Subscription</DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </SignedIn>
 
 
 
                     <SignedOut>
                         <SignInButton>
-                            <Button>Sign In</Button>
+                            <Button variant="outline">Sign In</Button>
                         </SignInButton>
                     </SignedOut>
                     <SignedIn>
