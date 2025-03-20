@@ -91,7 +91,7 @@ export default function Home() {
               return (
                 <Card key={index} className="bg-background">
                   <CardContent className="pt-6r">
-                    <div>
+                    <div className="flex flex-col space-y-4">
                       <div className="flex items-center space-x-4">
                         <div className="relative h-12 w-12 flex-shrink-0"><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
                         <div>
