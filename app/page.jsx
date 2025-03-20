@@ -18,7 +18,7 @@ export default function Home() {
                   <CardContent className="pt-6 text-center flex flex-col items-center">
                     <div className="flex flex-col items-center justify-center">
                       {feature.icon}
-                      <h3>{feature.title}</h3>
+                      <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                       <p>{feature.description}</p>
                     </div>
                   </CardContent>
