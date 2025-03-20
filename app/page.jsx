@@ -8,13 +8,13 @@ export default function Home() {
       <div className="grid-background"></div>
       <HeroSection />
 
-      <section>
-        <div>
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
           <h2>Powerful Features for Your Career Growth</h2>
           <div>
             {features.map((feature, index) => {
               return (
-                <Card>
+                <Card key={index}>
                   <CardContent>
                     <div>
                       {feature.icon}
