@@ -63,13 +63,14 @@ export default function Home() {
           <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {howItWorks.map((item, index) => {
               return (
-                <div key={index} className="felx flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center"> 
+                <div key={index} className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     {item.icon}
                   </div>
                   <h3 className="font-semibold text-xl">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
-                </div>                
+                </div>
+
               );
             })}
           </div>
