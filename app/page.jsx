@@ -92,8 +92,8 @@ export default function Home() {
                 <Card key={index} className="bg-background">
                   <CardContent className="pt-6r">
                     <div>
-                      <div>
-                        <div><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
+                      <div className="flex items-center space-x-4">
+                        <div ><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
                         <div>
                           <p className="font-semibold">{testimonal.author}</p>
                           <p className="text-sm text-muted-foreground">{testimonal.role}</p>
