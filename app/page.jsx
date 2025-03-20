@@ -67,6 +67,8 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center"> 
                     {item.icon}
                   </div>
+                  <h3 className="font-semibold text-xl">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>                
               );
             })}
