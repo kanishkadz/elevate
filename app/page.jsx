@@ -93,8 +93,12 @@ export default function Home() {
                   <CardContent className="pt-6r">
                     <div>
                       <div>
-                        <div><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} /></div>
-                        <div></div>
+                        <div><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
+                        <div>
+                          <p className="font-semibold">{testimonal.author}</p>
+                          <p className="text-sm text-muted-foreground">{testimonal.role}</p>
+                          <p className="text-sm text-primary">{testimonal.company}</p>
+                        </div>
                       </div>
                       <blockquote>
 
