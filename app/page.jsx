@@ -7,8 +7,11 @@ export default function Home() {
   return (
     <div>
       <div className="grid-background"></div>
+
+      {/* hero */}
       <HeroSection />
 
+      {/* features */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Powerful Features for Your Career Growth</h2>
@@ -24,13 +27,13 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
-
               )
             })}
           </div>
         </div>
       </section>
 
+      {/* statistics */}
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -54,6 +57,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* how it works */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
