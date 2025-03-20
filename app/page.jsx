@@ -101,7 +101,15 @@ export default function Home() {
                         </div>
                       </div>
                       <blockquote>
-
+                        <p className="text-muted-foreground italic relative">
+                          <span className="text-3xl text-primary absolute -top-4 -left-2">
+                            &quot;
+                          </span>
+                          {testimonal.quote}
+                          <span className="text-3xl text-primary absolute -bottom-4">
+                            &quot;
+                          </span>
+                        </p>
                       </blockquote>
                     </div>                    
                   </CardContent>
