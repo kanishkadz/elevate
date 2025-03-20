@@ -124,6 +124,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* faqs */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -139,9 +140,16 @@ export default function Home() {
                 </AccordionItem>
               ))}
             </Accordion>
+          </div>
+        </div>
+      </section>
 
-
-
+      {/* cta */}
+      <section className="w-full">
+        <div className="mx-auto py-24 gradient rounded-lg">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Ready to accelerate your Career ?</h2>
+            <p className="text-muted-foreground">Join thousands of professionals who are advancing their careers with AI-powered guidance</p>
           </div>
         </div>
       </section>
