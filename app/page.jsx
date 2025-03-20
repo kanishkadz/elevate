@@ -14,7 +14,7 @@ export default function Home() {
           <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {features.map((feature, index) => {
               return (
-                <Card key={index}>
+                <Card key={index} className="border-2 hover:border-primary transition-colors duration-300">
                   <CardContent>
                     <div>
                       {feature.icon}
