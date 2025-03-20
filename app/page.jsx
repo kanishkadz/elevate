@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/hero";
 import { features } from "@/data/features";
 import { howItWorks } from "@/data/howItWorks";
+import { testimonial } from "@/data/industries";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -76,6 +78,31 @@ export default function Home() {
                 </div>
 
               );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">What our User say ?</h2>
+          <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {testimonial.map((testimonal, index) => {
+              return (
+                <Card key={index} className="bg-background">
+                  <CardContent className="pt-6r">
+                    <div>
+                      <div>
+                        <div><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} /></div>
+                        <div></div>
+                      </div>
+                      <blockquote>
+
+                      </blockquote>
+                    </div>                    
+                  </CardContent>
+                </Card>
+              )
             })}
           </div>
         </div>
