@@ -6,8 +6,8 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <section className="w-full pt-36 md:pt-48 pb-10">
-        <div>
-            <div>
+        <div className="space-y-6 text-center">
+            <div className="space-y-6 mx-auto">
                 <h1>Your AI Career Coach for <br /> Professional Success</h1>
                 <p>Advance your career with personalised guidance, interview preparartion, and AI-powered tools for job success.</p>
             </div>
