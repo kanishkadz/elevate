@@ -93,7 +93,7 @@ export default function Home() {
                   <CardContent className="pt-6r">
                     <div>
                       <div className="flex items-center space-x-4">
-                        <div ><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
+                        <div className="relative h-12 w-12 flex-shrink-0"><Image src={testimonal.image} alt={testimonal.author} width={40} height={40} className="rounded-full object-cover border-primary/20" /></div>
                         <div>
                           <p className="font-semibold">{testimonal.author}</p>
                           <p className="text-sm text-muted-foreground">{testimonal.role}</p>
