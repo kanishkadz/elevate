@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/hero";
 import { features } from "@/data/features";
+import { howItWorks } from "@/data/howItWorks";
 
 export default function Home() {
   return (
@@ -60,19 +61,14 @@ export default function Home() {
             <p className="text-muted-foreground">Four Simple steps to accelerate your career growth</p>
           </div>
           <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {features.map((feature, index) => {
+            {howItWorks.map((item, index) => {
               return (
-                <Card key={index} className="border-2 hover:border-primary transition-colors duration-300">
-                  <CardContent className="pt-6 text-center flex flex-col items-center">
-                    <div className="flex flex-col items-center justify-center">
-                      {feature.icon}
-                      <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                      <p className="text-muted-foreground">{feature.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-              )
+                <div key={index} className="felx flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center"> 
+                    {item.icon}
+                  </div>
+                </div>                
+              );
             })}
           </div>
         </div>
