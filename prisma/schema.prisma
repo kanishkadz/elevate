@@ -12,3 +12,31 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id        String      @id @default(uuid())
+  clerkUserId      String   @unique
+  email     String      @unique
+  name      String?
+  imageUrl    String?
+  industry    String?
+  IndustryInsight IndustryInsights? @relation(fields: [industry], references: [industry])
+  createdAt()   DateTime    @default(now())
+  updatedAt()   DateTime    @updatedAt
+
+
+  //profile fields
+  bio     String?
+  experience    Int?
+  skills    String[]
+
+
+  assessments    Assessment[]
+  resume Resume?
+  coverLetter    CoverLetter[]
+
+}
+
+model IndustryInsights {
+  
+}
