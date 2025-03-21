@@ -37,6 +37,12 @@ model User {
 
 }
 
+model Assessment{}
+
+model Resume{}
+
+model CoverLetter{}
+
 model IndustryInsights {
   
 }
