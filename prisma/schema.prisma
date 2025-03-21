@@ -77,5 +77,21 @@ model CoverLetter{
 }
 
 model IndustryInsights {
+  id     String       @id @default(cuid())
+  industry     String     @unique
+
+
+  //users in the industry
+  users      User[]
+
+
+  //salary data
+  salaryRanges     Json[]
+
+
+  //industry trends
+  growthRate     Float
+  demandLevel      String
+  topSkills      String[]  
   
 }
